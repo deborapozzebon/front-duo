@@ -1,0 +1,46 @@
+.carousel-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 2px;
+}
+
+.carousel-link{
+    color: #a141eb;
+    font-weight: bold;
+}
+
+.carousel-text.line1{
+    font-weight: bold;
+}
+
+.carousel-caption{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+
+.carousel-item {
+    width: 100%;
+	height: 500px;
+    background-image: linear-gradient(to left, transparent 30%, #fff 70%), url(/src/assets/header.png);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color:#e1a607;
+    font-weight: 900;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-item {
+        height: 300px;
+        width: 100%;
+        background-image: url(/src/assets/header.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

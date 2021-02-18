@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Carousel from './carousel/carousel';
+import Accordion from './accordion/accordion';
+import Navbar from './navbar/navbar';
+import data from './assets/duvidas.json';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carousel />
+      <Navbar />
+      <body className="app-body">
+        {
+          data.lista_tarefas.map((item) => {
+             return <Accordion
+              title={item.titulo}
+              content={item.descricao}
+            />
+          })
+        }
+      </body>
+      <footer className="app-footer fixed-bottom" />
     </div>
   );
 }

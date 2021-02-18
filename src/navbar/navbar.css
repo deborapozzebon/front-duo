@@ -1,0 +1,135 @@
+.app-nav {
+  height: 80px;
+  width: 55%;
+  background-color: #a141eb;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 10px 10px 6px -10px rgba(0,0,0,0.63);
+}
+
+.app-nav-invisible {
+  height: 80px;
+  width: 100%;
+  /* border: 2px solid tomato;  */
+  position: absolute;
+  top: 0;
+  left: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-button {
+  height: 45px;
+  border: transparent;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.nav-button.first {
+  background-color: #e1a607;
+  width: 250px;
+}
+
+.nav-button.first:hover {
+  background-color: #c99300;
+}
+
+.nav-button.first .icon{
+  background:url(/src/assets/editar.png) no-repeat left center;
+  padding: 10px 20px 10px 10px;
+}
+
+.nav-button.seccond {
+  background-color: #7928b7;
+  width: 250px;
+}
+
+.nav-button.seccond:hover {
+  background-color: #622194;
+}
+
+.nav-button.seccond .icon{
+  background:url(/src/assets/seja_consultor.png) no-repeat left center;
+  padding: 10px 20px 10px 10px;
+}
+
+.nav-button.third {
+  background-color: #0cbde0;
+  width: 180px;
+}
+
+.nav-button.third:hover {
+  background-color: #0ba3c2;
+}
+
+.nav-button.fourth {
+  background-color: #e1a607;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 180px;
+}
+
+.nav-button.fourth:hover {
+  background-color: #c99300;
+}
+
+.nav-button.fourth .icon{
+  background:url(/src/assets/area_restrita.png) no-repeat left center;
+  padding: 10px 20px 10px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-nav{
+    height: 0px;
+    width: 100%;
+    border-bottom-right-radius: 0px;
+  }
+
+  .app-nav-invisible {
+    flex-direction: column;
+    height: 200px;
+    left: 0px;
+    top: 80px;
+    align-items: flex-start;
+  }
+
+  .nav-button.fourth {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .nav-button.first {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .nav-button.seccond {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .nav-button.third {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+}
